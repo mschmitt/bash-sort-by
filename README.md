@@ -6,8 +6,10 @@ sort-by is a wrapper to sort things by arbitrary sorting criteria.
 
 To sort a list of server names containing fe/front before mid, before back, before db:
 
+```bash
 source sort-by.bash
 sort-by "(fe|front)" mid back db < input.txt
+```
 
 First match wins; "frontend-db" puts the line into the "(fe|front)" bucket.
 
